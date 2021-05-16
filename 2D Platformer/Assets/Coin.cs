@@ -20,7 +20,7 @@ public class Coin : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            collision.gameObject.GetComponent<PlayerController>().AddScore(1);
+            collision.gameObject.GetComponent<PlayerController>().AddScore(0);
             AudioManager.instance.PlayEffect(0);
             Destroy(gameObject);
         }
